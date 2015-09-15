@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailCollectionViewCell" id="gTV-IL-0wX" customClass="DetailCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyO-2e-qOe">
+                        <rect key="frame" x="0.0" y="15" width="64" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="oTW-GC-556"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-q8-eaC">
+                        <rect key="frame" x="0.0" y="38" width="64" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Pzf-ya-Nyj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="tyO-2e-qOe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="59I-IJ-MuV"/>
+                <constraint firstAttribute="trailing" secondItem="vpc-q8-eaC" secondAttribute="trailing" id="Odj-hb-MDO"/>
+                <constraint firstAttribute="trailing" secondItem="tyO-2e-qOe" secondAttribute="trailing" id="Vnn-kj-5zC"/>
+                <constraint firstItem="vpc-q8-eaC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="38" id="asg-ux-PzQ"/>
+                <constraint firstItem="tyO-2e-qOe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="sAi-V4-b11"/>
+                <constraint firstItem="vpc-q8-eaC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yAu-Pa-yvr"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="tyO-2e-qOe"/>
+                    <exclude reference="vpc-q8-eaC"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="tyO-2e-qOe"/>
+                    <include reference="vpc-q8-eaC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bottomLabel" destination="vpc-q8-eaC" id="5kp-rw-upw"/>
+                <outlet property="topLabel" destination="tyO-2e-qOe" id="Opo-aB-1Uj"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
