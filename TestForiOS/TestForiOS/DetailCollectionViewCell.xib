@@ -15,42 +15,78 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyO-2e-qOe">
                         <rect key="frame" x="0.0" y="15" width="64" height="18"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="18" id="oTW-GC-556"/>
+                            <constraint firstAttribute="height" constant="18" id="juI-9C-qkw"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="juI-9C-qkw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="juI-9C-qkw"/>
+                            </mask>
+                        </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-q8-eaC">
                         <rect key="frame" x="0.0" y="38" width="64" height="22"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="22" id="Pzf-ya-Nyj"/>
+                            <constraint firstAttribute="height" constant="22" id="yWq-8P-eUb"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yWq-8P-eUb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="yWq-8P-eUb"/>
+                            </mask>
+                        </variation>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="tyO-2e-qOe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="59I-IJ-MuV"/>
-                <constraint firstAttribute="trailing" secondItem="vpc-q8-eaC" secondAttribute="trailing" id="Odj-hb-MDO"/>
-                <constraint firstAttribute="trailing" secondItem="tyO-2e-qOe" secondAttribute="trailing" id="Vnn-kj-5zC"/>
-                <constraint firstItem="vpc-q8-eaC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="38" id="asg-ux-PzQ"/>
-                <constraint firstItem="tyO-2e-qOe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="sAi-V4-b11"/>
-                <constraint firstItem="vpc-q8-eaC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yAu-Pa-yvr"/>
+                <constraint firstItem="tyO-2e-qOe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1S8-eD-nfb"/>
+                <constraint firstAttribute="trailing" secondItem="vpc-q8-eaC" secondAttribute="trailing" id="9rj-1J-sCb"/>
+                <constraint firstAttribute="trailing" secondItem="tyO-2e-qOe" secondAttribute="trailing" id="dwH-Cy-ouy"/>
+                <constraint firstItem="vpc-q8-eaC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="38" id="nqN-e6-dxl"/>
+                <constraint firstItem="tyO-2e-qOe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="nsG-0e-kFG"/>
+                <constraint firstItem="vpc-q8-eaC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ueG-e0-hpB"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="tyO-2e-qOe"/>
                     <exclude reference="vpc-q8-eaC"/>
                 </mask>
+                <mask key="constraints">
+                    <exclude reference="1S8-eD-nfb"/>
+                    <exclude reference="dwH-Cy-ouy"/>
+                    <exclude reference="nsG-0e-kFG"/>
+                    <exclude reference="9rj-1J-sCb"/>
+                    <exclude reference="nqN-e6-dxl"/>
+                    <exclude reference="ueG-e0-hpB"/>
+                </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="tyO-2e-qOe"/>
                     <include reference="vpc-q8-eaC"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1S8-eD-nfb"/>
+                    <include reference="dwH-Cy-ouy"/>
+                    <include reference="nsG-0e-kFG"/>
+                    <include reference="9rj-1J-sCb"/>
+                    <include reference="nqN-e6-dxl"/>
+                    <include reference="ueG-e0-hpB"/>
                 </mask>
             </variation>
             <connections>
