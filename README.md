@@ -14,4 +14,4 @@ your view will have consistent behavior on iOS 8 and iOS 9.
 
 My workaround for now is to override layoutSubViews and set the width again after calling [super layoutSubViews].
 
-Use any:any size class also help, but I need to support landscape mode, so this is not an option to me. Stay tuned for the follow ups.
+Use any:any size class also help, but I need to support landscape mode, so this is not an option to me. Stay tuned for the followups.
