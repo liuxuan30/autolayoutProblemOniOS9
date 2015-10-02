@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestNavigationControllerDelegate.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+// for custrom navigation transition animation
+@property (strong, nonatomic) UINavigationController *AppNavigationController;
+@property (assign, nonatomic) CGPoint UserTouchPoint;
+@property (strong, nonatomic) UIView *UserTouchView;
+@property (strong, nonatomic) TestNavigationControllerDelegate *NaviDelegate;
 @end
 
