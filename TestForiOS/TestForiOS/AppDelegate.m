@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // init NavigationControllerDelegate first
+    TestNavigationControllerDelegate * naviDelegate = [[TestNavigationControllerDelegate alloc] init];
+    self.NaviDelegate = naviDelegate;
+    self.AppNavigationController = (UINavigationController *)self.window.rootViewController;
+    self.AppNavigationController.delegate = nil;
+    
     return YES;
 }
 

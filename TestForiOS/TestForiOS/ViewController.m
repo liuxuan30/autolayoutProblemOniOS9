@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "DetailCollectionViewCell.h"
+#import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -29,6 +31,7 @@
     [self.detailCollectionView registerNib:nib forCellWithReuseIdentifier:@"DetailCollectionViewCell"];
 }
 
+#pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return 1;
 }
@@ -44,12 +47,25 @@
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(90, 64); // 90 is the width of 本周市场份额 with systemFontSize:15 in UILabel
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DetailCollectionViewCell *cell = (DetailCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    UIApplication *app = [UIApplication sharedApplication];
+    AppDelegate *appDelegate = (AppDelegate *)app.delegate;
+    appDelegate.UserTouchView = cell;
+    appDelegate.UserTouchPoint = cell.frame.origin;
+    // TODO: move ModelIsSubChartModel to a better class
+    DetailViewController *vc = [[DetailViewController alloc] init];
+    appDelegate.AppNavigationController.delegate = appDelegate.NaviDelegate;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

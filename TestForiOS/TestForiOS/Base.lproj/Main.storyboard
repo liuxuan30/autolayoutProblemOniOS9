@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rj1-Lb-b3G">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -26,6 +26,9 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="80" y="184" width="240" height="456"/>
+                                </variation>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -40,10 +43,10 @@
                                 <exclude reference="BCO-xf-3sq"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="dDr-0B-PGL"/>
                                 <exclude reference="omh-2b-gr7"/>
                                 <exclude reference="wtJ-oP-7A5"/>
                                 <exclude reference="xDO-Ay-EgM"/>
-                                <exclude reference="dDr-0B-PGL"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -51,20 +54,39 @@
                                 <include reference="BCO-xf-3sq"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="dDr-0B-PGL"/>
                                 <include reference="omh-2b-gr7"/>
                                 <include reference="wtJ-oP-7A5"/>
                                 <include reference="xDO-Ay-EgM"/>
-                                <include reference="dDr-0B-PGL"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Hmm-JO-lxV"/>
                     <connections>
                         <outlet property="detailCollectionView" destination="BCO-xf-3sq" id="kdX-J7-bbT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247.5" y="429"/>
+            <point key="canvasLocation" x="-70.5" y="450"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WaH-FE-K2M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rj1-Lb-b3G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbu-7u-NdD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nHQ-Ng-F6o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qm-m8-HBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-988.5" y="450"/>
         </scene>
     </scenes>
 </document>

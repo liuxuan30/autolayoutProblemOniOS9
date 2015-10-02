@@ -34,7 +34,8 @@
     UIViewController* toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIViewController* fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
 //#ifdef __IPHONE_9_0
-//    //Xuan: with the first release of iOS 9, auto layout engine has problems calculating the width and set the frame correctly
+//    //Xuan: with the first release of iOS 9, auto layout engine has problems calculating the width and set the      frame correctly
+//    // Try comment this out and restore it to see the difference
 //    // I have to re-calculate for it again.
 //    toViewController.view.frame = fromViewController.view.frame;
 //#endif

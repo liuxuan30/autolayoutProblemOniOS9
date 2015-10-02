@@ -18,6 +18,8 @@
 		134FC5561BA80060003684A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134FC5541BA80060003684A5 /* LaunchScreen.storyboard */; };
 		134FC56A1BA80366003684A5 /* DetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 134FC5681BA80366003684A5 /* DetailCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		134FC56B1BA80366003684A5 /* DetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134FC5691BA80366003684A5 /* DetailCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		13AF11351BBE079E00066312 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF11331BBE079E00066312 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		13AF11361BBE079E00066312 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13AF11341BBE079E00066312 /* DetailViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		134FC5671BA80366003684A5 /* DetailCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewCell.h; sourceTree = "<group>"; };
 		134FC5681BA80366003684A5 /* DetailCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewCell.m; sourceTree = "<group>"; };
 		134FC5691BA80366003684A5 /* DetailCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		13AF11321BBE079E00066312 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		13AF11331BBE079E00066312 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		13AF11341BBE079E00066312 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,9 @@
 				134FC54A1BA80060003684A5 /* AppDelegate.m */,
 				134FC54C1BA80060003684A5 /* ViewController.h */,
 				134FC54D1BA80060003684A5 /* ViewController.m */,
+				13AF11321BBE079E00066312 /* DetailViewController.h */,
+				13AF11331BBE079E00066312 /* DetailViewController.m */,
+				13AF11341BBE079E00066312 /* DetailViewController.xib */,
 				13420B251BBDFFE200F0698A /* TestNavigationControllerDelegate.h */,
 				13420B261BBDFFE200F0698A /* TestNavigationControllerDelegate.m */,
 				13420B271BBDFFE200F0698A /* PopAnimator.h */,
@@ -161,6 +169,7 @@
 			files = (
 				134FC5561BA80060003684A5 /* LaunchScreen.storyboard in Resources */,
 				134FC5531BA80060003684A5 /* Assets.xcassets in Resources */,
+				13AF11361BBE079E00066312 /* DetailViewController.xib in Resources */,
 				134FC5511BA80060003684A5 /* Main.storyboard in Resources */,
 				134FC56B1BA80366003684A5 /* DetailCollectionViewCell.xib in Resources */,
 			);
@@ -176,6 +185,7 @@
 				134FC54E1BA80060003684A5 /* ViewController.m in Sources */,
 				134FC54B1BA80060003684A5 /* AppDelegate.m in Sources */,
 				13420B2E1BBE005F00F0698A /* PopAnimator.m in Sources */,
+				13AF11351BBE079E00066312 /* DetailViewController.m in Sources */,
 				13420B291BBDFFE200F0698A /* TestNavigationControllerDelegate.m in Sources */,
 				134FC5481BA80060003684A5 /* main.m in Sources */,
 				13420B2C1BBDFFF000F0698A /* PushAnimator.m in Sources */,
@@ -290,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestForiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wingzero.TestForiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestForiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wingzero.TestForiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
