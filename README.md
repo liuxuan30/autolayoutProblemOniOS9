@@ -1,6 +1,8 @@
 # autolayoutProblemOniOS9
 autolayout Problem On iOS9 
 
+Still not fixed in iOS 9.2
+
 check http://stackoverflow.com/questions/32577211/view-frame-width-is-not-correct-after-layoutsubviews-against-its-constraints-on
 
 So far, I contact Apple technical support today, They said:
