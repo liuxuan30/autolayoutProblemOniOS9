@@ -1,7 +1,18 @@
 # autolayoutProblemOniOS9
 autolayout Problem On iOS9 
 
-Still not fixed in iOS 9.2
+### UPDATE after WWDC 2016
+
+So I went to WWDC 2016 and talked to a lab engineer, he said I could use
+`self.contentView.translatesAutoresizingMaskIntoConstraints = NO;`
+to solve it.
+
+However, an evangelist for UIKit technologies reached me out a few days later saying it's not a valid fix because I don't own contentView, and they are pulling back this issue again under investigation, and advice me using the old workdaround
+
+Thus except for my workaround, use above code at your own risk right now.
+
+
+### Still not fixed in iOS 9.3.2
 
 check http://stackoverflow.com/questions/32577211/view-frame-width-is-not-correct-after-layoutsubviews-against-its-constraints-on
 
